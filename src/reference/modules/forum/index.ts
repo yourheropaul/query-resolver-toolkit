@@ -6,7 +6,7 @@ export type CategoryId = u32
 
 export class Category extends Struct {
     public static Codec(): string {
-        return `{"id": "CategoryId", "title": "Text", "description": "Text", "deleted": "Bool", "archived": "Bool"}`
+        return `{"id": "CategoryId", "title": "Text", "description": "Text", "deleted": "bool", "archived": "bool"}`
     }
 }
 
@@ -14,7 +14,7 @@ export type ThreadId = u32
 
 export class Thread extends Struct {
     public static Codec(): string {
-		return `{"id": "ThreadId", "title": "Text", "category_id": "CategoryId", "nr_in_category": "U32"}`
+		return `{"id": "ThreadId", "title": "Text", "category_id": "CategoryId", "nr_in_category": "u32"}`
     }
 }
 
